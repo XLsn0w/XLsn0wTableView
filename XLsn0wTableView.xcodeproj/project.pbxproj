@@ -15,10 +15,12 @@
 		044B5F342248A27500EF5A1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F332248A27500EF5A1D /* main.m */; };
 		044B5F3E2248A27500EF5A1D /* XLsn0wTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F3D2248A27500EF5A1D /* XLsn0wTableViewTests.m */; };
 		044B5F492248A27500EF5A1D /* XLsn0wTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F482248A27500EF5A1D /* XLsn0wTableViewUITests.m */; };
-		044B5F622248A87200EF5A1D /* KTJTableViewProtocoler.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F602248A87200EF5A1D /* KTJTableViewProtocoler.m */; };
-		044B5F672248A88500EF5A1D /* JDragonTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F652248A88500EF5A1D /* JDragonTableManager.m */; };
-		044B5F682248A88500EF5A1D /* UITableView+JDragonTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F662248A88500EF5A1D /* UITableView+JDragonTableManager.m */; };
+		044B5F622248A87200EF5A1D /* TableViewProtocoler.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F602248A87200EF5A1D /* TableViewProtocoler.m */; };
+		044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F652248A88500EF5A1D /* TableViewManager.m */; };
+		044B5F682248A88500EF5A1D /* UITableView+TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */; };
 		044B5F6C2248B32000EF5A1D /* XLsn0wTextCarousel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F6A2248B31F00EF5A1D /* XLsn0wTextCarousel.podspec */; };
+		044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */; };
+		044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */; };
 		D734D95EF7B835B2BDD7E5AD /* libPods-XLsn0wTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1928F7AC05FFD65AF31EDA2A /* libPods-XLsn0wTableView.a */; };
 /* End PBXBuildFile section */
 
@@ -56,14 +58,18 @@
 		044B5F442248A27500EF5A1D /* XLsn0wTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLsn0wTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044B5F482248A27500EF5A1D /* XLsn0wTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableViewUITests.m; sourceTree = "<group>"; };
 		044B5F4A2248A27500EF5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		044B5F5F2248A87200EF5A1D /* KTJTableViewProtocoler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTJTableViewProtocoler.h; sourceTree = "<group>"; };
-		044B5F602248A87200EF5A1D /* KTJTableViewProtocoler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTJTableViewProtocoler.m; sourceTree = "<group>"; };
-		044B5F632248A88400EF5A1D /* UITableView+JDragonTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JDragonTableManager.h"; sourceTree = "<group>"; };
-		044B5F642248A88500EF5A1D /* JDragonTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDragonTableManager.h; sourceTree = "<group>"; };
-		044B5F652248A88500EF5A1D /* JDragonTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDragonTableManager.m; sourceTree = "<group>"; };
-		044B5F662248A88500EF5A1D /* UITableView+JDragonTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JDragonTableManager.m"; sourceTree = "<group>"; };
+		044B5F5F2248A87200EF5A1D /* TableViewProtocoler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewProtocoler.h; sourceTree = "<group>"; };
+		044B5F602248A87200EF5A1D /* TableViewProtocoler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewProtocoler.m; sourceTree = "<group>"; };
+		044B5F632248A88400EF5A1D /* UITableView+TableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+TableViewManager.h"; sourceTree = "<group>"; };
+		044B5F642248A88500EF5A1D /* TableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewManager.h; sourceTree = "<group>"; };
+		044B5F652248A88500EF5A1D /* TableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewManager.m; sourceTree = "<group>"; };
+		044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TableViewManager.m"; sourceTree = "<group>"; };
 		044B5F6A2248B31F00EF5A1D /* XLsn0wTextCarousel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wTextCarousel.podspec; sourceTree = "<group>"; };
 		044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewKit.h; sourceTree = "<group>"; };
+		044B5F6D2248C7FB00EF5A1D /* DownloadPicturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicturer.h; sourceTree = "<group>"; };
+		044B5F6E2248C7FC00EF5A1D /* DownloadPicturerPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicturerPath.h; sourceTree = "<group>"; };
+		044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicturer.m; sourceTree = "<group>"; };
+		044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicturerPath.m; sourceTree = "<group>"; };
 		1928F7AC05FFD65AF31EDA2A /* libPods-XLsn0wTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLsn0wTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38453DCC79C94CF414433E99 /* Pods-XLsn0wTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wTableView.debug.xcconfig"; path = "Target Support Files/Pods-XLsn0wTableView/Pods-XLsn0wTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		CC46CFFB44E181D1FB416B59 /* Pods-XLsn0wTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wTableView.release.xcconfig"; path = "Target Support Files/Pods-XLsn0wTableView/Pods-XLsn0wTableView.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,12 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				044B5F692248B31400EF5A1D /* XLsn0wTableViewKit */,
-				044B5F632248A88400EF5A1D /* UITableView+JDragonTableManager.h */,
-				044B5F662248A88500EF5A1D /* UITableView+JDragonTableManager.m */,
-				044B5F642248A88500EF5A1D /* JDragonTableManager.h */,
-				044B5F652248A88500EF5A1D /* JDragonTableManager.m */,
-				044B5F5F2248A87200EF5A1D /* KTJTableViewProtocoler.h */,
-				044B5F602248A87200EF5A1D /* KTJTableViewProtocoler.m */,
 				044B5F232248A27400EF5A1D /* XLsn0wTableView */,
 				044B5F3C2248A27500EF5A1D /* XLsn0wTableViewTests */,
 				044B5F472248A27500EF5A1D /* XLsn0wTableViewUITests */,
@@ -161,10 +161,44 @@
 		044B5F692248B31400EF5A1D /* XLsn0wTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				044B5F752248D3CE00EF5A1D /* DownloadPicturer */,
+				044B5F742248D01600EF5A1D /* TableViewExtensions */,
+				044B5F732248D00700EF5A1D /* TableViewProtocoler */,
 				044B5F6A2248B31F00EF5A1D /* XLsn0wTextCarousel.podspec */,
 				044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */,
 			);
 			path = XLsn0wTableViewKit;
+			sourceTree = "<group>";
+		};
+		044B5F732248D00700EF5A1D /* TableViewProtocoler */ = {
+			isa = PBXGroup;
+			children = (
+				044B5F642248A88500EF5A1D /* TableViewManager.h */,
+				044B5F652248A88500EF5A1D /* TableViewManager.m */,
+				044B5F5F2248A87200EF5A1D /* TableViewProtocoler.h */,
+				044B5F602248A87200EF5A1D /* TableViewProtocoler.m */,
+			);
+			path = TableViewProtocoler;
+			sourceTree = "<group>";
+		};
+		044B5F742248D01600EF5A1D /* TableViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				044B5F632248A88400EF5A1D /* UITableView+TableViewManager.h */,
+				044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */,
+			);
+			path = TableViewExtensions;
+			sourceTree = "<group>";
+		};
+		044B5F752248D3CE00EF5A1D /* DownloadPicturer */ = {
+			isa = PBXGroup;
+			children = (
+				044B5F6D2248C7FB00EF5A1D /* DownloadPicturer.h */,
+				044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */,
+				044B5F6E2248C7FC00EF5A1D /* DownloadPicturerPath.h */,
+				044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */,
+			);
+			path = DownloadPicturer;
 			sourceTree = "<group>";
 		};
 		1CA73A53C421521E9A6F740A /* Pods */ = {
@@ -365,11 +399,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				044B5F292248A27400EF5A1D /* ViewController.m in Sources */,
-				044B5F622248A87200EF5A1D /* KTJTableViewProtocoler.m in Sources */,
-				044B5F672248A88500EF5A1D /* JDragonTableManager.m in Sources */,
-				044B5F682248A88500EF5A1D /* UITableView+JDragonTableManager.m in Sources */,
+				044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */,
+				044B5F622248A87200EF5A1D /* TableViewProtocoler.m in Sources */,
+				044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */,
+				044B5F682248A88500EF5A1D /* UITableView+TableViewManager.m in Sources */,
 				044B5F342248A27500EF5A1D /* main.m in Sources */,
 				044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */,
+				044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
