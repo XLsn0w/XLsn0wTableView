@@ -7,7 +7,7 @@
 //
 
 #import "aTableViewCell.h"
-#import "JDragonTableManager.h"
+#import "TableViewManager.h"
 
 @interface aTableViewCell ()<JDTableManagerDelegate>
 

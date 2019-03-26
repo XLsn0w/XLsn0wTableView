@@ -54,7 +54,7 @@
     }
 }
 
-+ (BOOL)isRetina{
++ (BOOL)isDeviceRetina{
     if ([[UIDevice currentDevice].systemVersion floatValue]>=8.0) {
         return [UIScreen mainScreen].nativeScale>=2;
     } else {

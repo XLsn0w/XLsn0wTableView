@@ -31,14 +31,14 @@ PODS:
     - Masonry
     - MBProgressHUD
     - SDWebImage
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - "UITableView+FDTemplateLayoutCell"
   - XLsn0wKit_objc
-  - YYKit
+  - YYModel
+  - YYText
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -50,7 +50,8 @@ SPEC REPOS:
     - SDWebImage
     - "UITableView+FDTemplateLayoutCell"
     - XLsn0wKit_objc
-    - YYKit
+    - YYModel
+    - YYText
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -61,8 +62,9 @@ SPEC CHECKSUMS:
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   XLsn0wKit_objc: d39bb5e5acaebfd34126553545b285514143300c
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 71326c6ef261662a7299fc810c6872edaf27d1d8
+PODFILE CHECKSUM: 43023308242192b52c880bf5bd73a7f2d7dcfbc9
 
 COCOAPODS: 1.6.1

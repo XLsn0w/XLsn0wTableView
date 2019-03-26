@@ -2,16 +2,16 @@
 #import "SecondViewController.h"
 #import "aTableViewCell.h"
 #import "bTableViewCell.h"
-#import "JDragonTableManager.h"
-#import "UITableView+JDragonTableManager.h"
+#import "TableViewManager.h"
+#import "UITableView+TableViewManager.h"
 
 @interface SecondViewController ()
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *cellSegMent;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeSegment;
 @property (weak, nonatomic) IBOutlet UITableView *aTableView;
-@property (nonatomic, strong) JDragonTableManager *tabDelagate;
-@property (nonatomic, strong) JDragonTableManager *tabDataSource;
+@property (nonatomic, strong) TableViewManager *tabDelagate;
+@property (nonatomic, strong) TableViewManager *tabDataSource;
 @property (nonatomic, assign) BOOL isSingleCell;
 
 @end

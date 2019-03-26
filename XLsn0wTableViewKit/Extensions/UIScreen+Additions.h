@@ -12,7 +12,7 @@
 
 + (float)screenWidth;
 + (float)screenHeight;
-+ (BOOL)isRetina;
++ (BOOL)isDeviceRetina;
 + (float)scale;
 
 @end
