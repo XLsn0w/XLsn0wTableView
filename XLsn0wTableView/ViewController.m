@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DrawTableView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    DrawTableView* tableView = [[DrawTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [self.view addSubview:tableView];
 }
 
 @end

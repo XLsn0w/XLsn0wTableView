@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040362FD2249CFAF00F3F249 /* XLsn0wTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */; };
+		040362FE2249CFAF00F3F249 /* XLsn0wLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040362FA2249CFAF00F3F249 /* XLsn0wLabel.m */; };
+		040362FF2249CFAF00F3F249 /* DrawTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040362FB2249CFAF00F3F249 /* DrawTableView.m */; };
+		040363072249CFC700F3F249 /* UIScreen+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363032249CFC700F3F249 /* UIScreen+Additions.m */; };
+		040363082249CFC700F3F249 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363052249CFC700F3F249 /* UIView+Additions.m */; };
+		040363092249CFC700F3F249 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363062249CFC700F3F249 /* NSString+Additions.m */; };
 		044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F252248A27400EF5A1D /* AppDelegate.m */; };
 		044B5F292248A27400EF5A1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F282248A27400EF5A1D /* ViewController.m */; };
 		044B5F2C2248A27400EF5A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F2A2248A27400EF5A1D /* Main.storyboard */; };
@@ -42,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040362F72249CFAE00F3F249 /* XLsn0wLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLabel.h; sourceTree = "<group>"; };
+		040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableViewCell.m; sourceTree = "<group>"; };
+		040362F92249CFAE00F3F249 /* XLsn0wTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewCell.h; sourceTree = "<group>"; };
+		040362FA2249CFAF00F3F249 /* XLsn0wLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLabel.m; sourceTree = "<group>"; };
+		040362FB2249CFAF00F3F249 /* DrawTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTableView.m; sourceTree = "<group>"; };
+		040362FC2249CFAF00F3F249 /* DrawTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTableView.h; sourceTree = "<group>"; };
+		040363012249CFC600F3F249 /* UIScreen+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Additions.h"; sourceTree = "<group>"; };
+		040363022249CFC600F3F249 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		040363032249CFC700F3F249 /* UIScreen+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Additions.m"; sourceTree = "<group>"; };
+		040363042249CFC700F3F249 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		040363052249CFC700F3F249 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		040363062249CFC700F3F249 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		044B5F212248A27400EF5A1D /* XLsn0wTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044B5F242248A27400EF5A1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044B5F252248A27400EF5A1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +119,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040362F62249CF9E00F3F249 /* XLsn0wUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				040362FC2249CFAF00F3F249 /* DrawTableView.h */,
+				040362FB2249CFAF00F3F249 /* DrawTableView.m */,
+				040362F72249CFAE00F3F249 /* XLsn0wLabel.h */,
+				040362FA2249CFAF00F3F249 /* XLsn0wLabel.m */,
+				040362F92249CFAE00F3F249 /* XLsn0wTableViewCell.h */,
+				040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */,
+			);
+			path = XLsn0wUIKit;
+			sourceTree = "<group>";
+		};
+		040363002249CFBB00F3F249 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				040363012249CFC600F3F249 /* UIScreen+Additions.h */,
+				040363032249CFC700F3F249 /* UIScreen+Additions.m */,
+				040363022249CFC600F3F249 /* UIView+Additions.h */,
+				040363052249CFC700F3F249 /* UIView+Additions.m */,
+				040363042249CFC700F3F249 /* NSString+Additions.h */,
+				040363062249CFC700F3F249 /* NSString+Additions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		044B5F182248A27400EF5A1D = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +205,8 @@
 		044B5F692248B31400EF5A1D /* XLsn0wTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				040363002249CFBB00F3F249 /* Extensions */,
+				040362F62249CF9E00F3F249 /* XLsn0wUIKit */,
 				044B5F752248D3CE00EF5A1D /* DownloadPicturer */,
 				044B5F742248D01600EF5A1D /* TableViewExtensions */,
 				044B5F732248D00700EF5A1D /* TableViewProtocoler */,
@@ -400,12 +446,18 @@
 			files = (
 				044B5F292248A27400EF5A1D /* ViewController.m in Sources */,
 				044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */,
+				040362FF2249CFAF00F3F249 /* DrawTableView.m in Sources */,
 				044B5F622248A87200EF5A1D /* TableViewProtocoler.m in Sources */,
 				044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */,
+				040362FE2249CFAF00F3F249 /* XLsn0wLabel.m in Sources */,
 				044B5F682248A88500EF5A1D /* UITableView+TableViewManager.m in Sources */,
+				040363092249CFC700F3F249 /* NSString+Additions.m in Sources */,
+				040363072249CFC700F3F249 /* UIScreen+Additions.m in Sources */,
 				044B5F342248A27500EF5A1D /* main.m in Sources */,
 				044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */,
 				044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */,
+				040362FD2249CFAF00F3F249 /* XLsn0wTableViewCell.m in Sources */,
+				040363082249CFC700F3F249 /* UIView+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
