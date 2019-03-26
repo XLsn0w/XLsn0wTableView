@@ -13,6 +13,11 @@
 		040363072249CFC700F3F249 /* UIScreen+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363032249CFC700F3F249 /* UIScreen+Additions.m */; };
 		040363082249CFC700F3F249 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363052249CFC700F3F249 /* UIView+Additions.m */; };
 		040363092249CFC700F3F249 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363062249CFC700F3F249 /* NSString+Additions.m */; };
+		040363132249D2C900F3F249 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403630B2249D2C800F3F249 /* FirstViewController.m */; };
+		040363142249D2C900F3F249 /* aTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403630C2249D2C800F3F249 /* aTableViewCell.m */; };
+		040363152249D2C900F3F249 /* bTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0403630E2249D2C900F3F249 /* bTableViewCell.xib */; };
+		040363162249D2C900F3F249 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403630F2249D2C900F3F249 /* SecondViewController.m */; };
+		040363172249D2C900F3F249 /* bTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363102249D2C900F3F249 /* bTableViewCell.m */; };
 		044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F252248A27400EF5A1D /* AppDelegate.m */; };
 		044B5F292248A27400EF5A1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F282248A27400EF5A1D /* ViewController.m */; };
 		044B5F2C2248A27400EF5A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F2A2248A27400EF5A1D /* Main.storyboard */; };
@@ -60,6 +65,15 @@
 		040363042249CFC700F3F249 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		040363052249CFC700F3F249 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		040363062249CFC700F3F249 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		0403630A2249D2C800F3F249 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		0403630B2249D2C800F3F249 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		0403630C2249D2C800F3F249 /* aTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aTableViewCell.m; sourceTree = "<group>"; };
+		0403630D2249D2C900F3F249 /* bTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bTableViewCell.h; sourceTree = "<group>"; };
+		0403630E2249D2C900F3F249 /* bTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bTableViewCell.xib; sourceTree = "<group>"; };
+		0403630F2249D2C900F3F249 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		040363102249D2C900F3F249 /* bTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bTableViewCell.m; sourceTree = "<group>"; };
+		040363112249D2C900F3F249 /* aTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aTableViewCell.h; sourceTree = "<group>"; };
+		040363122249D2C900F3F249 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		044B5F212248A27400EF5A1D /* XLsn0wTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044B5F242248A27400EF5A1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044B5F252248A27400EF5A1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -176,6 +190,15 @@
 				044B5F272248A27400EF5A1D /* ViewController.h */,
 				044B5F282248A27400EF5A1D /* ViewController.m */,
 				044B5F2A2248A27400EF5A1D /* Main.storyboard */,
+				040363112249D2C900F3F249 /* aTableViewCell.h */,
+				0403630C2249D2C800F3F249 /* aTableViewCell.m */,
+				0403630D2249D2C900F3F249 /* bTableViewCell.h */,
+				040363102249D2C900F3F249 /* bTableViewCell.m */,
+				0403630E2249D2C900F3F249 /* bTableViewCell.xib */,
+				0403630A2249D2C800F3F249 /* FirstViewController.h */,
+				0403630B2249D2C800F3F249 /* FirstViewController.m */,
+				040363122249D2C900F3F249 /* SecondViewController.h */,
+				0403630F2249D2C900F3F249 /* SecondViewController.m */,
 				044B5F2D2248A27500EF5A1D /* Assets.xcassets */,
 				044B5F2F2248A27500EF5A1D /* LaunchScreen.storyboard */,
 				044B5F322248A27500EF5A1D /* Info.plist */,
@@ -370,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044B5F312248A27500EF5A1D /* LaunchScreen.storyboard in Resources */,
+				040363152249D2C900F3F249 /* bTableViewCell.xib in Resources */,
 				044B5F6C2248B32000EF5A1D /* XLsn0wTextCarousel.podspec in Resources */,
 				044B5F2E2248A27500EF5A1D /* Assets.xcassets in Resources */,
 				044B5F2C2248A27400EF5A1D /* Main.storyboard in Resources */,
@@ -451,13 +475,17 @@
 				044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */,
 				040362FE2249CFAF00F3F249 /* XLsn0wLabel.m in Sources */,
 				044B5F682248A88500EF5A1D /* UITableView+TableViewManager.m in Sources */,
+				040363132249D2C900F3F249 /* FirstViewController.m in Sources */,
 				040363092249CFC700F3F249 /* NSString+Additions.m in Sources */,
 				040363072249CFC700F3F249 /* UIScreen+Additions.m in Sources */,
 				044B5F342248A27500EF5A1D /* main.m in Sources */,
+				040363162249D2C900F3F249 /* SecondViewController.m in Sources */,
 				044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */,
 				044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */,
+				040363172249D2C900F3F249 /* bTableViewCell.m in Sources */,
 				040362FD2249CFAF00F3F249 /* XLsn0wTableViewCell.m in Sources */,
 				040363082249CFC700F3F249 /* UIView+Additions.m in Sources */,
+				040363142249D2C900F3F249 /* aTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
