@@ -8,7 +8,6 @@
 
 #import "FCXRefreshBaseView.h"
 
-
 @implementation FCXRefreshBaseView
 
 - (instancetype)initWithFrame:(CGRect)frame {

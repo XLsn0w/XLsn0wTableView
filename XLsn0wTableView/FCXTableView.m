@@ -1,15 +1,7 @@
-//
-//  FCXTableView.m
-//  FCXTableViewDemo
-//
-//  Created by 冯 传祥 on 16/3/22.
-//  Copyright © 2016年 冯 传祥. All rights reserved.
-//
 
 #import "FCXTableView.h"
 
-
-@interface FCXTableView ()<UITableViewDelegate, UITableViewDataSource>
+@interface FCXTableView () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSString *cellIdentifier;
 @property (nonatomic, strong) UITableViewCell *noDataCell;
@@ -120,22 +112,15 @@
         _noDataCell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
         _noDataCell.selectionStyle = UITableViewCellSelectionStyleNone;
 
-        FCXNoDataView *view = [[self.noDataViewClass alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
-        [_noDataCell addSubview:view];
-        
-        __weak typeof(self) weakSelf = self;
-        view.noDataActionBlock = ^(){
-            if (weakSelf.noDataActionBlock) {
-                weakSelf.noDataActionBlock();
-            }
-        };
+    
     }
     return _noDataCell;
 }
 
 - (Class)noDataViewClass {
     if (!_noDataViewClass) {
-        _noDataViewClass = [FCXNoDataView class];
+       
+        
     }
     return _noDataViewClass;
 }

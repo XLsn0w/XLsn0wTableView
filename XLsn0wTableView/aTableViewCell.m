@@ -9,26 +9,16 @@
 #import "aTableViewCell.h"
 #import "TableViewManager.h"
 
-@interface aTableViewCell ()<JDTableManagerDelegate>
+@interface aTableViewCell () <JDTableManagerDelegate>
 
 @end
 
 @implementation aTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
--(void)PrepareToWithAppear:(NSObject *)data WithCurentVC:(UIViewController *)curentVC WithIndexPath:(NSIndexPath *)indexPath
-{
+-(void)PrepareToWithAppear:(NSObject *)data WithCurentVC:(UIViewController *)curentVC WithIndexPath:(NSIndexPath *)indexPath {
     self.textLabel.text = [data isKindOfClass:[NSString class]]?(NSString*)data:data.description;
     
     NSLog(@"data====%@",data);
 }
+
 @end

@@ -4,8 +4,7 @@
 
 @implementation DownloadPicturer
 
-//单利
-+(DownloadPicturer *)shareDownloadPicture {
++(DownloadPicturer *)shared {
     static DownloadPicturer * s_instance_dj_singleton = nil ;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

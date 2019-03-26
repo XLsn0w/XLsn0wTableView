@@ -1,7 +1,6 @@
 
 #import "SecondViewController.h"
 #import "aTableViewCell.h"
-#import "bTableViewCell.h"
 #import "TableViewManager.h"
 #import "UITableView+TableViewManager.h"
 
@@ -10,6 +9,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *cellSegMent;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeSegment;
 @property (weak, nonatomic) IBOutlet UITableView *aTableView;
+
 @property (nonatomic, strong) TableViewManager *tabDelagate;
 @property (nonatomic, strong) TableViewManager *tabDataSource;
 @property (nonatomic, assign) BOOL isSingleCell;

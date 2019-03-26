@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CustomViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];//设置成为主窗口并显示
+    self.window.rootViewController = [[CustomViewController alloc] init];//设置根视图控制器
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

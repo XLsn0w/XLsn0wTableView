@@ -8,7 +8,6 @@
 
 #import "FirstViewController.h"
 #import "aTableViewCell.h"
-#import "bTableViewCell.h"
 #import "TableViewManager.h"
 #import "UITableView+TableViewManager.h"
 
@@ -19,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *aTableView;
 @property (nonatomic,strong) TableViewManager   *tabDelagate;
 @property (nonatomic,strong) TableViewManager   *tabDataSource;
-@property(nonatomic,assign) BOOL  isSingleCell;
+@property (nonatomic,assign) BOOL  isSingleCell;
 
 @end
 
@@ -27,16 +26,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     [self setUIConfig];
 }
--(void)setUIConfig
-{
+
+- (void)setUIConfig {
     self.aTableView.estimatedRowHeight = 50;
     [self.aTableView registerClass:[aTableViewCell class] forCellReuseIdentifier:@"aTableViewCell"];
-    [self.aTableView registerNib:[UINib nibWithNibName:@"bTableViewCell" bundle:nil] forCellReuseIdentifier:@"bTableViewCell"];
+    [self.aTableView registerNib:[UINib nibWithNibName:@"bTableViewCell" bundle:nil]
+          forCellReuseIdentifier:@"bTableViewCell"];
 
-    self.tabDelagate = [self.aTableView JDTab_DelegateWithHeaderHeight:10 footerHeight:10 selectBlock:^(NSIndexPath *indexPath) {
+    self.tabDelagate = [self.aTableView JDTab_DelegateWithHeaderHeight:10
+                                                          footerHeight:10
+                                                           selectBlock:^(NSIndexPath *indexPath) {
         NSLog(@"选中");
     }];
     // 需要实现JDTableManagerDelegate 代理在cell里面
@@ -46,7 +47,6 @@
     self.tabDataSource = [self.aTableView JDTab_DataSourceWithTabType:NumberOfRowsInSectionCount withVC:self isSection:true reuseIdentifier:@"aTableViewCell"];
     [self.tabDataSource updateReloadData:@[@"111",@"222"]];
      */
-    
 }
 
 - (IBAction)segmentAction:(UISegmentedControl *)sender {

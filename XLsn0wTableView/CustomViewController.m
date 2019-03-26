@@ -1,14 +1,7 @@
-//
-//  ViewController.m
-//  FCXTableViewDemo
-//
-//  Created by 冯 传祥 on 16/3/22.
-//  Copyright © 2016年 冯 传祥. All rights reserved.
-//
 
 #import "CustomViewController.h"
 #import "FCXTableView.h"
-#import "FCXTableViewCell.h"
+#import "XLsn0wTableViewCell.h"
 #import "UIScrollView+FCXRefresh.h"
 
 @interface CustomViewController ()
@@ -23,7 +16,7 @@
     [super viewDidLoad];
     
     _tableView = [[FCXTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-    [_tableView registerClass:[FCXTableViewCell class] forCellReuseIdentifier:@"FCXCellIdentifier"];
+    [_tableView registerClass:[XLsn0wTableViewCell class] forCellReuseIdentifier:@"XLsn0wTableViewCell"];
     [self.view addSubview:_tableView];
     
     [self addRefreshHeaderAndFooter];
@@ -61,14 +54,8 @@
 }
 
 - (void)setupTableViewAction {
-    //点击某行
     _tableView.didSelectRowBlock = ^(NSIndexPath *indexPath, id data) {
         NSLog(@"点击了 第%ld组 第%ld行 数据内容是：%@", indexPath.section, indexPath.row, data);
-    };
-    
-    //无数据时点击
-    _tableView.noDataActionBlock = ^(){
-        NSLog(@"无数据点击了");
     };
 }
 

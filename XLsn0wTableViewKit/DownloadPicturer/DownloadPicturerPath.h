@@ -11,14 +11,11 @@
  */
 + (NSString *)getBSYDownloadPicturePath;
 
-
 /**
  存储图片
  @return 是否存储成功
  */
 +(BOOL)saveBSYDownloadPictureWithImage:(UIImage *)image ImageUrl:(NSString *)ImageUrl;
-
-
 
 /**
  获取存储的图片
