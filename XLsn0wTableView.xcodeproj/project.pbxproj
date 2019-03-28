@@ -22,7 +22,7 @@
 		044B5F622248A87200EF5A1D /* TableViewProtocoler.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F602248A87200EF5A1D /* TableViewProtocoler.m */; };
 		044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F652248A88500EF5A1D /* TableViewManager.m */; };
 		044B5F682248A88500EF5A1D /* UITableView+TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */; };
-		044B5F6C2248B32000EF5A1D /* XLsn0wTableViewKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F6A2248B31F00EF5A1D /* XLsn0wTableViewKit.podspec */; };
+		044B5F6C2248B32000EF5A1D /* XLsn0wTableView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F6A2248B31F00EF5A1D /* XLsn0wTableView.podspec */; };
 		044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */; };
 		044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */; };
 		04AC300A224A089500D6DDBE /* XLsn0wTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3004224A089500D6DDBE /* XLsn0wTableView.m */; };
@@ -81,7 +81,7 @@
 		044B5F642248A88500EF5A1D /* TableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewManager.h; sourceTree = "<group>"; };
 		044B5F652248A88500EF5A1D /* TableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewManager.m; sourceTree = "<group>"; };
 		044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TableViewManager.m"; sourceTree = "<group>"; };
-		044B5F6A2248B31F00EF5A1D /* XLsn0wTableViewKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wTableViewKit.podspec; sourceTree = "<group>"; };
+		044B5F6A2248B31F00EF5A1D /* XLsn0wTableView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wTableView.podspec; sourceTree = "<group>"; };
 		044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewKit.h; sourceTree = "<group>"; };
 		044B5F6D2248C7FB00EF5A1D /* DownloadPicturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicturer.h; sourceTree = "<group>"; };
 		044B5F6E2248C7FC00EF5A1D /* DownloadPicturerPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicturerPath.h; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 		044B5F692248B31400EF5A1D /* XLsn0wTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				044B5F6A2248B31F00EF5A1D /* XLsn0wTableViewKit.podspec */,
+				044B5F6A2248B31F00EF5A1D /* XLsn0wTableView.podspec */,
 				044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */,
 				040362F62249CF9E00F3F249 /* XLsn0wUIKit */,
 				044B5F742248D01600EF5A1D /* TableViewExtensions */,
@@ -376,7 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044B5F312248A27500EF5A1D /* LaunchScreen.storyboard in Resources */,
-				044B5F6C2248B32000EF5A1D /* XLsn0wTableViewKit.podspec in Resources */,
+				044B5F6C2248B32000EF5A1D /* XLsn0wTableView.podspec in Resources */,
 				044B5F2E2248A27500EF5A1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
