@@ -18,5 +18,9 @@ Pod::Spec.new do |s|
   s.source_files = "XLsn0wTableViewKit/**/*.{h,m}"
 
   s.dependency "Masonry"
+  s.dependency "XLsn0wKit_objc"
+  s.dependency "YYText"
+  s.dependency "YYModel"
+  s.dependency "UITableView+FDTemplateLayoutCell"
 
 end

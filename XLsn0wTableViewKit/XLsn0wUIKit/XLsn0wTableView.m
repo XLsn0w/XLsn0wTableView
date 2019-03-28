@@ -1,27 +1,29 @@
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *   \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *    \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
+#import "XLsn0wTableView.h"
 
-#import "FCXTableView.h"
-
-@interface FCXTableView () <UITableViewDelegate, UITableViewDataSource>
+@interface XLsn0wTableView () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSString *cellIdentifier;
-@property (nonatomic, strong) UITableViewCell *noDataCell;
 
 @end
 
-@implementation FCXTableView
+@implementation XLsn0wTableView
 
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     if (self = [super initWithFrame:frame style:style]) {
-        [self fcx_setup];
+        self.delegate = self;
+        self.dataSource = self;
     }
     return self;
-}
-
-- (void)fcx_setup {
-    self.delegate = self;
-    self.dataSource = self;
-    //清除没有数据cell的横线
-    self.tableFooterView = [[UIView alloc] init];
 }
 
 - (void)setGroupArray:(NSMutableArray *)groupArray {
@@ -49,30 +51,18 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    if (self.groupArray.count == 0) {//无数据时
-        return 1;
-    }
     return self.groupArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (self.groupArray.count == 0) {//无数据时
-        return 1;
-    }
     return [self.groupArray[section] count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.groupArray.count == 0) {//无数据时
-        return 300;
-    }
     return 44;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.groupArray.count == 0) {//无数据时
-        return self.noDataCell;
-    }
     NSAssert([self.groupArray[indexPath.section] isKindOfClass:[NSArray class]], @"groupArray中的数据必须是数组类型");
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier forIndexPath:indexPath];
@@ -93,9 +83,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (self.groupArray.count == 0) {//无数据时
-        return;
-    }
     NSAssert([self.groupArray[indexPath.section] isKindOfClass:[NSArray class]], @"groupArray中的数据必须是数组类型");
 
     if (self.groupArray.count > indexPath.section &&
@@ -104,25 +91,6 @@
         
         self.didSelectRowBlock(indexPath, [self.groupArray[indexPath.section] objectAtIndex:indexPath.row]);
     }
-}
-
-#pragma mark - 无数据时显示的cell
-- (UITableViewCell *)noDataCell {
-    if (!_noDataCell) {
-        _noDataCell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
-        _noDataCell.selectionStyle = UITableViewCellSelectionStyleNone;
-
-    
-    }
-    return _noDataCell;
-}
-
-- (Class)noDataViewClass {
-    if (!_noDataViewClass) {
-       
-        
-    }
-    return _noDataViewClass;
 }
 
 @end

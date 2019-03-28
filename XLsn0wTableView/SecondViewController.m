@@ -1,6 +1,5 @@
 
 #import "SecondViewController.h"
-#import "aTableViewCell.h"
 #import "TableViewManager.h"
 #import "UITableView+TableViewManager.h"
 
@@ -25,7 +24,7 @@
 
 - (void)setUIConfig {
     self.aTableView.estimatedRowHeight = 50;
-    [self.aTableView registerClass:[aTableViewCell class] forCellReuseIdentifier:@"aTableViewCell"];
+    [self.aTableView registerClass:[XLsn0wTableViewCell class] forCellReuseIdentifier:@"aTableViewCell"];
     [self.aTableView registerNib:[UINib nibWithNibName:@"bTableViewCell" bundle:nil]
           forCellReuseIdentifier:@"bTableViewCell"];
     self.tabDelagate = [self.aTableView JDTab_DelegateWithHeaderHeight:10

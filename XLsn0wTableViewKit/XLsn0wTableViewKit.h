@@ -21,6 +21,8 @@
 #import "UIImageView+WebCache.h"
 #import "YYModel.h"
 //#import "MJRefresh.h"
+#import "XLsn0wTableView.h"
+#import "XLsn0wTableViewCell.h"
 
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *

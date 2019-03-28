@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CustomViewController.h"
+#import "XLsn0wTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];//设置成为主窗口并显示
-    self.window.rootViewController = [[CustomViewController alloc] init];//设置根视图控制器
+    self.window.rootViewController = [[XLsn0wTableViewController alloc] init];//设置根视图控制器
     return YES;
 }
 

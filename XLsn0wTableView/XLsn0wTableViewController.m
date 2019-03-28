@@ -1,26 +1,28 @@
-//
-//  ViewController.m
-//  XLsn0wTableView
-//
-//  Created by mac on 2019/3/25.
-//  Copyright © 2019年 XLsn0w. All rights reserved.
-//
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *   \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *    \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
+#import "XLsn0wTableViewController.h"
 
-#import "ViewController.h"
-#import "DrawTableView.h"
+@interface XLsn0wTableViewController ()
 
-@interface ViewController ()
+@property (nonatomic, strong) XLsn0wTableView *tableView;
 
 @end
 
-@implementation ViewController
+@implementation XLsn0wTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    DrawTableView* tableView = [[DrawTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    [self.view addSubview:tableView];
+    _tableView = [[XLsn0wTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    [self.view addSubview:_tableView];
+    [_tableView registerClass:[XLsn0wTableViewCell class] forCellReuseIdentifier:@"XLsn0wTableViewCell"];
 }
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -52,7 +54,6 @@
 //        //拖动的时候不显示
 //        if (!tableView.dragging && !tableView.decelerating) {
 //            //下载图片数据 - 并缓存
-//
 //            [self p_loadImgeWithIndexPath:indexPath];
 //        }
 //    }
@@ -130,5 +131,6 @@
 //
 //    [self p_loadImage];
 //}
+
 
 @end
