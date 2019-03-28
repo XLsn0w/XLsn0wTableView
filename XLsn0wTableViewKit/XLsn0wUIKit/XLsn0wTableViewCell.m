@@ -295,9 +295,6 @@
 
 - (void)releaseMemory{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    //	if ([self.delegate keepCell:self]) {
-    //		return;
-    //	}
     [self clear];
     [super removeFromSuperview];
 }

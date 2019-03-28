@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
   s.dependency "XLsn0wKit_objc"
   s.dependency "YYText"
   s.dependency "YYModel"
+  s.dependency "MJRefresh"
+  s.dependency "KVOController"
   s.dependency "UITableView+FDTemplateLayoutCell"
 
 end
