@@ -97,9 +97,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "${PODS_ROOT}/XLsn0wKit_objc/XLsn0wKit/Resources/XLsn0wKit_objc.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "${PODS_ROOT}/XLsn0wKit_objc/XLsn0wKit/Resources/XLsn0wKit_objc.bundle"
 fi
 

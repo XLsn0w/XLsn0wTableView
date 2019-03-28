@@ -4,61 +4,73 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme_^#shared#^_</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>CocoaAsyncSocket.xcscheme_^#shared#^_</key>
+		<key>CocoaAsyncSocket.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FMDB.xcscheme_^#shared#^_</key>
+		<key>FMDB.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>MBProgressHUD.xcscheme_^#shared#^_</key>
+		<key>KVOController.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Masonry.xcscheme_^#shared#^_</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-XLsn0wTableView.xcscheme_^#shared#^_</key>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SDWebImage.xcscheme_^#shared#^_</key>
+		<key>Masonry.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>UITableView+FDTemplateLayoutCell.xcscheme_^#shared#^_</key>
+		<key>Pods-XLsn0wTableView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>XLsn0wKit_objc.xcscheme_^#shared#^_</key>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>YYModel.xcscheme_^#shared#^_</key>
+		<key>UITableView+FDTemplateLayoutCell.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>YYText.xcscheme_^#shared#^_</key>
+		<key>XLsn0wKit_objc.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YYText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

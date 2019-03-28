@@ -7,5 +7,7 @@ pod 'XLsn0wKit_objc’
 pod 'YYText’
 pod 'YYModel'
 pod 'UITableView+FDTemplateLayoutCell'
+pod 'MJRefresh'
+pod 'KVOController'
 
 end

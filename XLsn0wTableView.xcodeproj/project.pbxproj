@@ -13,8 +13,6 @@
 		040363072249CFC700F3F249 /* UIScreen+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363032249CFC700F3F249 /* UIScreen+Additions.m */; };
 		040363082249CFC700F3F249 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363052249CFC700F3F249 /* UIView+Additions.m */; };
 		040363092249CFC700F3F249 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363062249CFC700F3F249 /* NSString+Additions.m */; };
-		040363132249D2C900F3F249 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403630B2249D2C800F3F249 /* FirstViewController.m */; };
-		040363162249D2C900F3F249 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403630F2249D2C900F3F249 /* SecondViewController.m */; };
 		044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F252248A27400EF5A1D /* AppDelegate.m */; };
 		044B5F2E2248A27500EF5A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F2D2248A27500EF5A1D /* Assets.xcassets */; };
 		044B5F312248A27500EF5A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F2F2248A27500EF5A1D /* LaunchScreen.storyboard */; };
@@ -27,14 +25,10 @@
 		044B5F6C2248B32000EF5A1D /* XLsn0wTableViewKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F6A2248B31F00EF5A1D /* XLsn0wTableViewKit.podspec */; };
 		044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */; };
 		044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */; };
-		04AC2FEA224A077700D6DDBE /* ASDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC2FDD224A077600D6DDBE /* ASDetailModel.m */; };
-		04AC2FEB224A077700D6DDBE /* ASModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC2FDF224A077600D6DDBE /* ASModel.m */; };
-		04AC2FEC224A077700D6DDBE /* ASDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC2FE2224A077600D6DDBE /* ASDetailViewController.m */; };
-		04AC2FED224A077700D6DDBE /* ASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC2FE4224A077600D6DDBE /* ASHomeViewController.m */; };
-		04AC2FEE224A077700D6DDBE /* ASDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC2FE7224A077600D6DDBE /* ASDetailTableViewCell.m */; };
-		04AC2FEF224A077700D6DDBE /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC2FE9224A077600D6DDBE /* ASTableViewCell.m */; };
 		04AC300A224A089500D6DDBE /* XLsn0wTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3004224A089500D6DDBE /* XLsn0wTableView.m */; };
 		04AC300B224A089500D6DDBE /* XLsn0wTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3005224A089500D6DDBE /* XLsn0wTableViewController.m */; };
+		35112B1A224CABC900488ED7 /* XLsn0wTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35112B19224CABC900488ED7 /* XLsn0wTableViewModel.m */; };
+		35112B1D224CAF1C00488ED7 /* UIScrollView+AddRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 35112B1C224CAF1C00488ED7 /* UIScrollView+AddRefresh.m */; };
 		D734D95EF7B835B2BDD7E5AD /* libPods-XLsn0wTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1928F7AC05FFD65AF31EDA2A /* libPods-XLsn0wTableView.a */; };
 /* End PBXBuildFile section */
 
@@ -68,10 +62,6 @@
 		040363042249CFC700F3F249 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		040363052249CFC700F3F249 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		040363062249CFC700F3F249 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
-		0403630A2249D2C800F3F249 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0403630B2249D2C800F3F249 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		0403630F2249D2C900F3F249 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		040363122249D2C900F3F249 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		044B5F212248A27400EF5A1D /* XLsn0wTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044B5F242248A27400EF5A1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044B5F252248A27400EF5A1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,24 +87,16 @@
 		044B5F6E2248C7FC00EF5A1D /* DownloadPicturerPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicturerPath.h; sourceTree = "<group>"; };
 		044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicturer.m; sourceTree = "<group>"; };
 		044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicturerPath.m; sourceTree = "<group>"; };
-		04AC2FDC224A077600D6DDBE /* ASDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDetailModel.h; sourceTree = "<group>"; };
-		04AC2FDD224A077600D6DDBE /* ASDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDetailModel.m; sourceTree = "<group>"; };
-		04AC2FDE224A077600D6DDBE /* ASModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASModel.h; sourceTree = "<group>"; };
-		04AC2FDF224A077600D6DDBE /* ASModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASModel.m; sourceTree = "<group>"; };
-		04AC2FE1224A077600D6DDBE /* ASDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDetailViewController.h; sourceTree = "<group>"; };
-		04AC2FE2224A077600D6DDBE /* ASDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDetailViewController.m; sourceTree = "<group>"; };
-		04AC2FE3224A077600D6DDBE /* ASHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHomeViewController.h; sourceTree = "<group>"; };
-		04AC2FE4224A077600D6DDBE /* ASHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHomeViewController.m; sourceTree = "<group>"; };
-		04AC2FE6224A077600D6DDBE /* ASDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDetailTableViewCell.h; sourceTree = "<group>"; };
-		04AC2FE7224A077600D6DDBE /* ASDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDetailTableViewCell.m; sourceTree = "<group>"; };
-		04AC2FE8224A077600D6DDBE /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
-		04AC2FE9224A077600D6DDBE /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; };
 		04AC3002224A089400D6DDBE /* XLsn0wTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewController.h; sourceTree = "<group>"; };
 		04AC3003224A089400D6DDBE /* XLsn0wTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableView.h; sourceTree = "<group>"; };
 		04AC3004224A089500D6DDBE /* XLsn0wTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableView.m; sourceTree = "<group>"; };
 		04AC3005224A089500D6DDBE /* XLsn0wTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableViewController.m; sourceTree = "<group>"; };
 		04AC300D224A09A700D6DDBE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1928F7AC05FFD65AF31EDA2A /* libPods-XLsn0wTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLsn0wTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35112B18224CABC900488ED7 /* XLsn0wTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewModel.h; sourceTree = "<group>"; };
+		35112B19224CABC900488ED7 /* XLsn0wTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableViewModel.m; sourceTree = "<group>"; };
+		35112B1B224CAF1B00488ED7 /* UIScrollView+AddRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AddRefresh.h"; sourceTree = "<group>"; };
+		35112B1C224CAF1C00488ED7 /* UIScrollView+AddRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AddRefresh.m"; sourceTree = "<group>"; };
 		38453DCC79C94CF414433E99 /* Pods-XLsn0wTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wTableView.debug.xcconfig"; path = "Target Support Files/Pods-XLsn0wTableView/Pods-XLsn0wTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		CC46CFFB44E181D1FB416B59 /* Pods-XLsn0wTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wTableView.release.xcconfig"; path = "Target Support Files/Pods-XLsn0wTableView/Pods-XLsn0wTableView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +138,8 @@
 				040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */,
 				04AC3003224A089400D6DDBE /* XLsn0wTableView.h */,
 				04AC3004224A089500D6DDBE /* XLsn0wTableView.m */,
+				35112B18224CABC900488ED7 /* XLsn0wTableViewModel.h */,
+				35112B19224CABC900488ED7 /* XLsn0wTableViewModel.m */,
 			);
 			path = XLsn0wUIKit;
 			sourceTree = "<group>";
@@ -190,18 +174,12 @@
 				044B5F252248A27400EF5A1D /* AppDelegate.m */,
 				04AC3002224A089400D6DDBE /* XLsn0wTableViewController.h */,
 				04AC3005224A089500D6DDBE /* XLsn0wTableViewController.m */,
-				0403630A2249D2C800F3F249 /* FirstViewController.h */,
-				0403630B2249D2C800F3F249 /* FirstViewController.m */,
-				040363122249D2C900F3F249 /* SecondViewController.h */,
-				0403630F2249D2C900F3F249 /* SecondViewController.m */,
-				04AC2FDB224A077600D6DDBE /* Model */,
-				04AC2FE5224A077600D6DDBE /* View */,
-				04AC2FE0224A077600D6DDBE /* ViewController */,
 				044B5F2D2248A27500EF5A1D /* Assets.xcassets */,
 				044B5F2F2248A27500EF5A1D /* LaunchScreen.storyboard */,
 				044B5F322248A27500EF5A1D /* Info.plist */,
-				04AC300D224A09A700D6DDBE /* PrefixHeader.pch */,
 				044B5F332248A27500EF5A1D /* main.m */,
+				04AC300D224A09A700D6DDBE /* PrefixHeader.pch */,
+				044B5F752248D3CE00EF5A1D /* DownloadPicturer */,
 			);
 			path = XLsn0wTableView;
 			sourceTree = "<group>";
@@ -230,7 +208,6 @@
 				044B5F6A2248B31F00EF5A1D /* XLsn0wTableViewKit.podspec */,
 				044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */,
 				040362F62249CF9E00F3F249 /* XLsn0wUIKit */,
-				044B5F752248D3CE00EF5A1D /* DownloadPicturer */,
 				044B5F742248D01600EF5A1D /* TableViewExtensions */,
 				044B5F732248D00700EF5A1D /* TableViewProtocoler */,
 			);
@@ -251,6 +228,8 @@
 		044B5F742248D01600EF5A1D /* TableViewExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				35112B1B224CAF1B00488ED7 /* UIScrollView+AddRefresh.h */,
+				35112B1C224CAF1C00488ED7 /* UIScrollView+AddRefresh.m */,
 				044B5F632248A88400EF5A1D /* UITableView+TableViewManager.h */,
 				044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */,
 				040363012249CFC600F3F249 /* UIScreen+Additions.h */,
@@ -272,39 +251,6 @@
 				044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */,
 			);
 			path = DownloadPicturer;
-			sourceTree = "<group>";
-		};
-		04AC2FDB224A077600D6DDBE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				04AC2FDC224A077600D6DDBE /* ASDetailModel.h */,
-				04AC2FDD224A077600D6DDBE /* ASDetailModel.m */,
-				04AC2FDE224A077600D6DDBE /* ASModel.h */,
-				04AC2FDF224A077600D6DDBE /* ASModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		04AC2FE0224A077600D6DDBE /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				04AC2FE1224A077600D6DDBE /* ASDetailViewController.h */,
-				04AC2FE2224A077600D6DDBE /* ASDetailViewController.m */,
-				04AC2FE3224A077600D6DDBE /* ASHomeViewController.h */,
-				04AC2FE4224A077600D6DDBE /* ASHomeViewController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		04AC2FE5224A077600D6DDBE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				04AC2FE6224A077600D6DDBE /* ASDetailTableViewCell.h */,
-				04AC2FE7224A077600D6DDBE /* ASDetailTableViewCell.m */,
-				04AC2FE8224A077600D6DDBE /* ASTableViewCell.h */,
-				04AC2FE9224A077600D6DDBE /* ASTableViewCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		1CA73A53C421521E9A6F740A /* Pods */ = {
@@ -461,12 +407,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XLsn0wTableView/Pods-XLsn0wTableView-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/XLsn0wKit_objc/XLsn0wKit/Resources/XLsn0wKit_objc.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XLsn0wKit_objc.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,29 +451,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AC2FEE224A077700D6DDBE /* ASDetailTableViewCell.m in Sources */,
-				04AC2FEA224A077700D6DDBE /* ASDetailModel.m in Sources */,
 				044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */,
 				040362FF2249CFAF00F3F249 /* DrawTableView.m in Sources */,
 				044B5F622248A87200EF5A1D /* TableViewProtocoler.m in Sources */,
-				04AC2FEB224A077700D6DDBE /* ASModel.m in Sources */,
 				044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */,
 				040362FE2249CFAF00F3F249 /* XLsn0wLabel.m in Sources */,
 				044B5F682248A88500EF5A1D /* UITableView+TableViewManager.m in Sources */,
-				04AC2FED224A077700D6DDBE /* ASHomeViewController.m in Sources */,
-				04AC2FEC224A077700D6DDBE /* ASDetailViewController.m in Sources */,
 				04AC300B224A089500D6DDBE /* XLsn0wTableViewController.m in Sources */,
-				040363132249D2C900F3F249 /* FirstViewController.m in Sources */,
 				040363092249CFC700F3F249 /* NSString+Additions.m in Sources */,
 				040363072249CFC700F3F249 /* UIScreen+Additions.m in Sources */,
+				35112B1D224CAF1C00488ED7 /* UIScrollView+AddRefresh.m in Sources */,
 				044B5F342248A27500EF5A1D /* main.m in Sources */,
-				040363162249D2C900F3F249 /* SecondViewController.m in Sources */,
 				04AC300A224A089500D6DDBE /* XLsn0wTableView.m in Sources */,
 				044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */,
 				044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */,
-				04AC2FEF224A077700D6DDBE /* ASTableViewCell.m in Sources */,
 				040362FD2249CFAF00F3F249 /* XLsn0wTableViewCell.m in Sources */,
 				040363082249CFC700F3F249 /* UIView+Additions.m in Sources */,
+				35112B1A224CABC900488ED7 /* XLsn0wTableViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

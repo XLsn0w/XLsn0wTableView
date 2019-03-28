@@ -26,10 +26,10 @@ static inline CGFLOAT_TYPE CGFloat_ceil(CGFLOAT_TYPE cgfloat) {
 
 CTTextAlignment CTTextAlignmentFromUITextAlignment(NSTextAlignment alignment) {
     switch (alignment) {
-        case NSTextAlignmentLeft: return kCTLeftTextAlignment;
-        case NSTextAlignmentCenter: return kCTCenterTextAlignment;
-        case NSTextAlignmentRight: return kCTRightTextAlignment;
-        default: return kCTNaturalTextAlignment;
+        case NSTextAlignmentLeft: return kCTTextAlignmentLeft;
+        case NSTextAlignmentCenter: return kCTTextAlignmentCenter;
+        case NSTextAlignmentRight: return kCTTextAlignmentRight;
+        default: return kCTTextAlignmentNatural;
     }
 }
 
@@ -173,7 +173,7 @@ static inline NSRegularExpression * TopicRegularExpression() {
     BOOL isHighlight = highlighting;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *temp = text;
-        _text = text;
+        self->_text = text;
         CGSize size = self.frame.size;
         size.height += 10;
         UIGraphicsBeginImageContextWithOptions(size, ![self.backgroundColor isEqual:[UIColor clearColor]], 0);

@@ -14,11 +14,15 @@
 #define SIZE_FONT_CONTENT 17
 #define SIZE_FONT_SUBCONTENT (SIZE_FONT_CONTENT-1)
 
+@class XLsn0wTableViewModel;
+
 @interface XLsn0wTableViewCell : UITableViewCell
 
 @property (nonatomic, weak) NSDictionary *data;
 - (void)draw;
 - (void)clear;
 - (void)releaseMemory;
+
+@property (nonatomic, strong) XLsn0wTableViewModel* model;
 
 @end

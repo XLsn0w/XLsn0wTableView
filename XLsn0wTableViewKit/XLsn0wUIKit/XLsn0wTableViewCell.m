@@ -7,6 +7,7 @@
 #import "UIImageView+WebCache.h"
 #import "UIButton+WebCache.h"
 #import "UIView+WebCache.h"
+#import "XLsn0wTableViewModel.h"
 
 @implementation XLsn0wTableViewCell {
     UIImageView *postBGView;
@@ -21,6 +22,13 @@
     CGRect commentsRect;
     CGRect repostsRect;
 }
+
+/// 可以采用YYLabel
+//_titleLabel = [YYLabel new];
+//_titleLabel.font = [UIFont systemFontOfSize:16];
+//_titleLabel.textColor = [UIColor blueColor];
+//_titleLabel.displaysAsynchronously = YES;
+//[self.contentView addSubview:_titleLabel];
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
