@@ -23,8 +23,7 @@
 		044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F652248A88500EF5A1D /* TableViewManager.m */; };
 		044B5F682248A88500EF5A1D /* UITableView+TableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */; };
 		044B5F6C2248B32000EF5A1D /* XLsn0wTableView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 044B5F6A2248B31F00EF5A1D /* XLsn0wTableView.podspec */; };
-		044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */; };
-		044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */; };
+		044B5F712248C7FC00EF5A1D /* XLsn0wTableViewWebImager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044B5F6F2248C7FC00EF5A1D /* XLsn0wTableViewWebImager.m */; };
 		04AC300A224A089500D6DDBE /* XLsn0wTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3004224A089500D6DDBE /* XLsn0wTableView.m */; };
 		04AC300B224A089500D6DDBE /* XLsn0wTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC3005224A089500D6DDBE /* XLsn0wTableViewController.m */; };
 		35112B1A224CABC900488ED7 /* XLsn0wTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35112B19224CABC900488ED7 /* XLsn0wTableViewModel.m */; };
@@ -83,10 +82,8 @@
 		044B5F662248A88500EF5A1D /* UITableView+TableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TableViewManager.m"; sourceTree = "<group>"; };
 		044B5F6A2248B31F00EF5A1D /* XLsn0wTableView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wTableView.podspec; sourceTree = "<group>"; };
 		044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewKit.h; sourceTree = "<group>"; };
-		044B5F6D2248C7FB00EF5A1D /* DownloadPicturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicturer.h; sourceTree = "<group>"; };
-		044B5F6E2248C7FC00EF5A1D /* DownloadPicturerPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPicturerPath.h; sourceTree = "<group>"; };
-		044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicturer.m; sourceTree = "<group>"; };
-		044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPicturerPath.m; sourceTree = "<group>"; };
+		044B5F6D2248C7FB00EF5A1D /* XLsn0wTableViewWebImager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewWebImager.h; sourceTree = "<group>"; };
+		044B5F6F2248C7FC00EF5A1D /* XLsn0wTableViewWebImager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableViewWebImager.m; sourceTree = "<group>"; };
 		04AC3002224A089400D6DDBE /* XLsn0wTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewController.h; sourceTree = "<group>"; };
 		04AC3003224A089400D6DDBE /* XLsn0wTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableView.h; sourceTree = "<group>"; };
 		04AC3004224A089500D6DDBE /* XLsn0wTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableView.m; sourceTree = "<group>"; };
@@ -179,7 +176,6 @@
 				044B5F322248A27500EF5A1D /* Info.plist */,
 				044B5F332248A27500EF5A1D /* main.m */,
 				04AC300D224A09A700D6DDBE /* PrefixHeader.pch */,
-				044B5F752248D3CE00EF5A1D /* DownloadPicturer */,
 			);
 			path = XLsn0wTableView;
 			sourceTree = "<group>";
@@ -208,6 +204,7 @@
 				044B5F6A2248B31F00EF5A1D /* XLsn0wTableView.podspec */,
 				044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */,
 				040362F62249CF9E00F3F249 /* XLsn0wUIKit */,
+				044B5F752248D3CE00EF5A1D /* XLsn0wTableViewWebImager */,
 				044B5F742248D01600EF5A1D /* TableViewExtensions */,
 				044B5F732248D00700EF5A1D /* TableViewProtocoler */,
 			);
@@ -242,15 +239,13 @@
 			path = TableViewExtensions;
 			sourceTree = "<group>";
 		};
-		044B5F752248D3CE00EF5A1D /* DownloadPicturer */ = {
+		044B5F752248D3CE00EF5A1D /* XLsn0wTableViewWebImager */ = {
 			isa = PBXGroup;
 			children = (
-				044B5F6D2248C7FB00EF5A1D /* DownloadPicturer.h */,
-				044B5F6F2248C7FC00EF5A1D /* DownloadPicturer.m */,
-				044B5F6E2248C7FC00EF5A1D /* DownloadPicturerPath.h */,
-				044B5F702248C7FC00EF5A1D /* DownloadPicturerPath.m */,
+				044B5F6D2248C7FB00EF5A1D /* XLsn0wTableViewWebImager.h */,
+				044B5F6F2248C7FC00EF5A1D /* XLsn0wTableViewWebImager.m */,
 			);
-			path = DownloadPicturer;
+			path = XLsn0wTableViewWebImager;
 			sourceTree = "<group>";
 		};
 		1CA73A53C421521E9A6F740A /* Pods */ = {
@@ -451,7 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044B5F712248C7FC00EF5A1D /* DownloadPicturer.m in Sources */,
+				044B5F712248C7FC00EF5A1D /* XLsn0wTableViewWebImager.m in Sources */,
 				040362FF2249CFAF00F3F249 /* DrawTableView.m in Sources */,
 				044B5F622248A87200EF5A1D /* TableViewProtocoler.m in Sources */,
 				044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */,
@@ -464,7 +459,6 @@
 				044B5F342248A27500EF5A1D /* main.m in Sources */,
 				04AC300A224A089500D6DDBE /* XLsn0wTableView.m in Sources */,
 				044B5F262248A27400EF5A1D /* AppDelegate.m in Sources */,
-				044B5F722248C7FC00EF5A1D /* DownloadPicturerPath.m in Sources */,
 				040362FD2249CFAF00F3F249 /* XLsn0wTableViewCell.m in Sources */,
 				040363082249CFC700F3F249 /* UIView+Additions.m in Sources */,
 				35112B1A224CABC900488ED7 /* XLsn0wTableViewModel.m in Sources */,

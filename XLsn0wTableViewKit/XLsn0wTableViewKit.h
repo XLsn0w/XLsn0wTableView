@@ -14,6 +14,7 @@
 #import "TableViewManager.h"
 #import "UITableView+TableViewManager.h"
 #import "UIScrollView+AddRefresh.h"
+#import "XLsn0wTableViewWebImager.h"
 
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *
