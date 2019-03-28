@@ -1,10 +1,3 @@
-//
-//  KTJTableViewProtocoler.h
-//  KTJTableViewProtocoler
-//
-//  Created by 孙继刚 on 15/9/6.
-//  Copyright (c) 2015年 Madordie. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
