@@ -8,13 +8,8 @@
  *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
  *                                                                                           *
  *********************************************************************************************/
-#import <UIKit/UIKit.h>
+#import "XLsn0wTableViewModel.h"
 
-@interface UIScreen (Additions)
-
-+ (float)screenWidth;
-+ (float)screenHeight;
-+ (BOOL)isDeviceRetina;
-+ (float)scale;
+@implementation XLsn0wTableViewModel
 
 @end

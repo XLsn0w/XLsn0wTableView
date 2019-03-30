@@ -16,7 +16,7 @@
 @property (nonatomic, assign) CGFloat  headerHeight;
 @property (nonatomic, assign) CGFloat  footerHeight;
 @property (nonatomic, assign) CGSize  itemSize;
-@property (nonatomic, copy)   JDTabSelectCellBlock selectCellBlock;
+@property (nonatomic, copy)   TableViewDidSelectCellBlock selectCellBlock;
 @property (nonatomic, assign)   BOOL isAutoHeight;   //是否自动高
 
 
@@ -35,7 +35,7 @@
 + (instancetype)tabDelegateWithtableView:(UITableView *)tableView
                             HeaderHeight:(CGFloat)hHeight
                             footerHeight:(CGFloat)fHeight
-                             selectBlock:(JDTabSelectCellBlock)selectBlock
+                             selectBlock:(TableViewDidSelectCellBlock)selectBlock
 {
     return  [[[self class] alloc]initTabDelegateWithtableView:tableView RowHeight:0 headerHeight:hHeight footerHeight:fHeight selectBlock:selectBlock];
 }
@@ -44,7 +44,7 @@
                                    RowHeight:(CGFloat)rowHeight
                                 headerHeight:(CGFloat)hHeight
                                 footerHeight:(CGFloat)fHeight
-                                 selectBlock:(JDTabSelectCellBlock)selectBlock{
+                                 selectBlock:(TableViewDidSelectCellBlock)selectBlock{
     self = [super init];
     if (self) {
         self.rowHeight = rowHeight;
@@ -189,7 +189,7 @@
 
 -(void)setCellAutoHeightAndeHeaderHeight:(CGFloat)hHeight
                             footerHeight:(CGFloat)fHeight
-                             selectBlock:(JDTabSelectCellBlock)selectBlock
+                             selectBlock:(TableViewDidSelectCellBlock)selectBlock
 {
     
     self.headerHeight = hHeight;
@@ -275,9 +275,9 @@
             break;
     }
     //    NSTimeInterval startLoadTime = [[NSDate date] timeIntervalSince1970];
-    if ([cell conformsToProtocol:@protocol(JDTableManagerDelegate) ]) {
+    if ([cell conformsToProtocol:@protocol(XLsn0wTableManagerDelegate) ]) {
         if ([cell respondsToSelector:@selector(PrepareToWithAppear:WithCurentVC:WithIndexPath:)]) {
-            [( UITableViewCell<JDTableManagerDelegate> *)cell  PrepareToWithAppear:data WithCurentVC:self.currentVC WithIndexPath:indexPath];
+            [( UITableViewCell<XLsn0wTableManagerDelegate> *)cell  PrepareToWithAppear:data WithCurentVC:self.currentVC WithIndexPath:indexPath];
         }
     }
     //    NSTimeInterval endTime = [[NSDate date] timeIntervalSince1970];

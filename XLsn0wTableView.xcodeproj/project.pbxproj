@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		040362FD2249CFAF00F3F249 /* XLsn0wTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */; };
 		040362FE2249CFAF00F3F249 /* XLsn0wLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040362FA2249CFAF00F3F249 /* XLsn0wLabel.m */; };
-		040362FF2249CFAF00F3F249 /* DrawTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040362FB2249CFAF00F3F249 /* DrawTableView.m */; };
+		040362FF2249CFAF00F3F249 /* XLsn0wCustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040362FB2249CFAF00F3F249 /* XLsn0wCustomTableView.m */; };
 		040363072249CFC700F3F249 /* UIScreen+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363032249CFC700F3F249 /* UIScreen+Additions.m */; };
 		040363082249CFC700F3F249 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363052249CFC700F3F249 /* UIView+Additions.m */; };
 		040363092249CFC700F3F249 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 040363062249CFC700F3F249 /* NSString+Additions.m */; };
@@ -53,8 +53,8 @@
 		040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTableViewCell.m; sourceTree = "<group>"; };
 		040362F92249CFAE00F3F249 /* XLsn0wTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTableViewCell.h; sourceTree = "<group>"; };
 		040362FA2249CFAF00F3F249 /* XLsn0wLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLabel.m; sourceTree = "<group>"; };
-		040362FB2249CFAF00F3F249 /* DrawTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTableView.m; sourceTree = "<group>"; };
-		040362FC2249CFAF00F3F249 /* DrawTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTableView.h; sourceTree = "<group>"; };
+		040362FB2249CFAF00F3F249 /* XLsn0wCustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wCustomTableView.m; sourceTree = "<group>"; };
+		040362FC2249CFAF00F3F249 /* XLsn0wCustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wCustomTableView.h; sourceTree = "<group>"; };
 		040363012249CFC600F3F249 /* UIScreen+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Additions.h"; sourceTree = "<group>"; };
 		040363022249CFC600F3F249 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		040363032249CFC700F3F249 /* UIScreen+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Additions.m"; sourceTree = "<group>"; };
@@ -124,21 +124,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040362F62249CF9E00F3F249 /* XLsn0wUIKit */ = {
+		040362F62249CF9E00F3F249 /* XLsn0wTableViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				040362FC2249CFAF00F3F249 /* DrawTableView.h */,
-				040362FB2249CFAF00F3F249 /* DrawTableView.m */,
-				040362F72249CFAE00F3F249 /* XLsn0wLabel.h */,
-				040362FA2249CFAF00F3F249 /* XLsn0wLabel.m */,
-				040362F92249CFAE00F3F249 /* XLsn0wTableViewCell.h */,
-				040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */,
-				04AC3003224A089400D6DDBE /* XLsn0wTableView.h */,
-				04AC3004224A089500D6DDBE /* XLsn0wTableView.m */,
 				35112B18224CABC900488ED7 /* XLsn0wTableViewModel.h */,
 				35112B19224CABC900488ED7 /* XLsn0wTableViewModel.m */,
 			);
-			path = XLsn0wUIKit;
+			path = XLsn0wTableViewModel;
 			sourceTree = "<group>";
 		};
 		044B5F182248A27400EF5A1D = {
@@ -203,7 +195,10 @@
 			children = (
 				044B5F6A2248B31F00EF5A1D /* XLsn0wTableView.podspec */,
 				044B5F6B2248B31F00EF5A1D /* XLsn0wTableViewKit.h */,
-				040362F62249CF9E00F3F249 /* XLsn0wUIKit */,
+				35112B20224CEEE100488ED7 /* XLsn0wTableView */,
+				35112B1F224CEED500488ED7 /* XLsn0wTableViewCell */,
+				35112B1E224CEEC500488ED7 /* XLsn0wLabel */,
+				040362F62249CF9E00F3F249 /* XLsn0wTableViewModel */,
 				044B5F752248D3CE00EF5A1D /* XLsn0wTableViewWebImager */,
 				044B5F742248D01600EF5A1D /* TableViewExtensions */,
 				044B5F732248D00700EF5A1D /* TableViewProtocoler */,
@@ -255,6 +250,35 @@
 				CC46CFFB44E181D1FB416B59 /* Pods-XLsn0wTableView.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		35112B1E224CEEC500488ED7 /* XLsn0wLabel */ = {
+			isa = PBXGroup;
+			children = (
+				040362F72249CFAE00F3F249 /* XLsn0wLabel.h */,
+				040362FA2249CFAF00F3F249 /* XLsn0wLabel.m */,
+			);
+			path = XLsn0wLabel;
+			sourceTree = "<group>";
+		};
+		35112B1F224CEED500488ED7 /* XLsn0wTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				040362F92249CFAE00F3F249 /* XLsn0wTableViewCell.h */,
+				040362F82249CFAE00F3F249 /* XLsn0wTableViewCell.m */,
+			);
+			path = XLsn0wTableViewCell;
+			sourceTree = "<group>";
+		};
+		35112B20224CEEE100488ED7 /* XLsn0wTableView */ = {
+			isa = PBXGroup;
+			children = (
+				04AC3003224A089400D6DDBE /* XLsn0wTableView.h */,
+				04AC3004224A089500D6DDBE /* XLsn0wTableView.m */,
+				040362FC2249CFAF00F3F249 /* XLsn0wCustomTableView.h */,
+				040362FB2249CFAF00F3F249 /* XLsn0wCustomTableView.m */,
+			);
+			path = XLsn0wTableView;
 			sourceTree = "<group>";
 		};
 		C18886FE784ADFBF029439F9 /* Frameworks */ = {
@@ -447,7 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044B5F712248C7FC00EF5A1D /* XLsn0wTableViewWebImager.m in Sources */,
-				040362FF2249CFAF00F3F249 /* DrawTableView.m in Sources */,
+				040362FF2249CFAF00F3F249 /* XLsn0wCustomTableView.m in Sources */,
 				044B5F622248A87200EF5A1D /* TableViewProtocoler.m in Sources */,
 				044B5F672248A88500EF5A1D /* TableViewManager.m in Sources */,
 				040362FE2249CFAF00F3F249 /* XLsn0wLabel.m in Sources */,

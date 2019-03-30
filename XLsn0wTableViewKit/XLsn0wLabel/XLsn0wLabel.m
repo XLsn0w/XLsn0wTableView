@@ -1,4 +1,13 @@
-
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *   \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *    \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 #import "XLsn0wLabel.h"
 
 #import "UIView+Additions.h"
@@ -52,7 +61,6 @@ static inline NSRegularExpression * TopicRegularExpression() {
     
     return _topicRegularExpression;
 }
-
 
 @implementation XLsn0wLabel {
     UIImageView *labelImageView;
@@ -233,29 +241,29 @@ static inline NSRegularExpression * TopicRegularExpression() {
                 CFRelease(framesetter);
                 [[attributedStr mutableString] setString:@""];
                 
-                if (drawFlag==flag) {
+                if (self->drawFlag == flag) {
                     if (isHighlight) {
-                        if (highlighting) {
-                            highlightImageView.image = nil;
-                            if (highlightImageView.width!=screenShotimage.size.width) {
-                                highlightImageView.width = screenShotimage.size.width;
+                        if (self->highlighting) {
+                            self->highlightImageView.image = nil;
+                            if (self->highlightImageView.width!=screenShotimage.size.width) {
+                                self->highlightImageView.width = screenShotimage.size.width;
                             }
-                            if (highlightImageView.height!=screenShotimage.size.height) {
-                                highlightImageView.height = screenShotimage.size.height;
+                            if (self->highlightImageView.height!=screenShotimage.size.height) {
+                                self->highlightImageView.height = screenShotimage.size.height;
                             }
-                            highlightImageView.image = screenShotimage;
+                            self->highlightImageView.image = screenShotimage;
                         }
                     } else {
                         if ([temp isEqualToString:text]) {
-                            if (labelImageView.width!=screenShotimage.size.width) {
-                                labelImageView.width = screenShotimage.size.width;
+                            if (self->labelImageView.width!=screenShotimage.size.width) {
+                                self->labelImageView.width = screenShotimage.size.width;
                             }
-                            if (labelImageView.height!=screenShotimage.size.height) {
-                                labelImageView.height = screenShotimage.size.height;
+                            if (self->labelImageView.height!=screenShotimage.size.height) {
+                                self->labelImageView.height = screenShotimage.size.height;
                             }
-                            highlightImageView.image = nil;
-                            labelImageView.image = nil;
-                            labelImageView.image = screenShotimage;
+                            self->highlightImageView.image = nil;
+                            self->labelImageView.image = nil;
+                            self->labelImageView.image = screenShotimage;
                         }
                     }
 //                    [self debugDraw];//绘制可触摸区域

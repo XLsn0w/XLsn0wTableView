@@ -1,15 +1,23 @@
-
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *   \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *    \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 #import "XLsn0wTableViewWebImager.h"
 
-static NSString *const BSYDownloadPicture_Archive_PictureUrl = @"/Documents/pic.plist";
+static NSString *const BSYDownloadPicture_Archive_PictureUrl = @"/Documents/XLsn0wTableViewWebImager.plist";
 
 @implementation DownloadPicturerPath
 /**
  获取图片存贮位置
  @return 返回地址
  */
-+(NSString *)getBSYDownloadPicturePath
-{
++(NSString *)getBSYDownloadPicturePath {
     NSString *path_sandox = NSHomeDirectory();
     //创建一个存储plist文件的路径
     NSString *plistPath = [path_sandox stringByAppendingPathComponent:BSYDownloadPicture_Archive_PictureUrl];

@@ -59,27 +59,46 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 44;
+    return self.cellHeight;
 }
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    XLsn0wTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XLsn0wTableViewCell" forIndexPath:indexPath];
+//    [self configureCell:cell atIndexPath:indexPath];
+//    return cell;
+//}
+//
+//- (void)configureCell:(XLsn0wTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+//    cell.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
+//    cell.model = self.datas[indexPath.row];
+//}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return [tableView fd_heightForCellWithIdentifier:@"cell" cacheByIndexPath:indexPath configuration:^(XLsn0wTableViewCell *cell) {
+//        [self configureCell:cell atIndexPath:indexPath];
+//    }];
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSAssert([self.groupArray[indexPath.section] isKindOfClass:[NSArray class]], @"groupArray中的数据必须是数组类型");
+    return [self.cellForRowDelegate cellForRowAtIndexPath:indexPath];
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier forIndexPath:indexPath];
+//    Class cla = NSClassFromString(self.cellClassString);
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier forIndexPath:indexPath];
     
-    if (self.groupArray.count > indexPath.section &&
-            [self.groupArray[indexPath.section] count]) {
-        id dataModel = [self.groupArray[indexPath.section] objectAtIndex:indexPath.row];
-        
-        //这里的setDataModel：是更新cell数据模型的方法，可自行定义，可参考FCXTableViewCell
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored"-Wundeclared-selector"
-        if ([cell respondsToSelector:@selector(setDataModel:)]) {
-            [cell performSelectorOnMainThread:@selector(setDataModel:) withObject:dataModel waitUntilDone:NO];
-        }
-#pragma clang diagnostic pop
-    }
-    return cell;
+//    if (self.groupArray.count > indexPath.section &&
+//            [self.groupArray[indexPath.section] count]) {
+//        id dataModel = [self.groupArray[indexPath.section] objectAtIndex:indexPath.row];
+//
+//        //这里的addDataFromModel：是更新cell数据模型的自定义方法 传属性用set方法也行
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored"-Wundeclared-selector"
+//        if ([cell respondsToSelector:@selector(addDataFromModel:)]) {
+//            [cell performSelectorOnMainThread:@selector(addDataFromModel:) withObject:dataModel waitUntilDone:NO];
+//        }
+//#pragma clang diagnostic pop
+//    }
+//    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

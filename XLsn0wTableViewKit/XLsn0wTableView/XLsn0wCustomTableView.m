@@ -1,15 +1,15 @@
 
-#import "DrawTableView.h"
+#import "XLsn0wCustomTableView.h"
 #import "NSString+Additions.h"
 #import "UIScreen+Additions.h"
 #import "UIView+Additions.h"
 #import "XLsn0wTableViewCell.h"
 
-@interface DrawTableView() <UITableViewDelegate, UITableViewDataSource>
+@interface XLsn0wCustomTableView() <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
-@implementation DrawTableView{
+@implementation XLsn0wCustomTableView{
     NSMutableArray *datas;
     NSMutableArray *needLoadArr;
     BOOL scrollToToping;

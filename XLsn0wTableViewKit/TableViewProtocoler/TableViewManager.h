@@ -2,9 +2,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void(^JDTabSelectCellBlock)(NSIndexPath *indexPath);
+typedef void(^TableViewDidSelectCellBlock)(NSIndexPath *indexPath);
 
-@protocol JDTableManagerDelegate <NSObject>
+@protocol XLsn0wTableManagerDelegate <NSObject>
 
 - (void)PrepareToWithAppear:(NSObject *)data
                WithCurentVC:(UIViewController*)curentVC
@@ -12,7 +12,7 @@ typedef void(^JDTabSelectCellBlock)(NSIndexPath *indexPath);
 
 @end
 
-typedef enum JDTabHelpType:NSUInteger {
+typedef enum XLsn0wTableViewSectionType:NSUInteger {
     NumberOfRowsInSectionNum=0,  // NumRows----Of Group Section
     NumberOfRowsInSectionCount,  // NumRows----of One Section
     NumberOfRowsInSectionOne,    // Oneows-----of Section
@@ -27,7 +27,7 @@ typedef enum JDTabHelpType:NSUInteger {
 + (instancetype)tabDelegateWithtableView:(UITableView *)tableView
                             HeaderHeight:(CGFloat)hHeight
                             footerHeight:(CGFloat)fHeight
-                             selectBlock:(JDTabSelectCellBlock)selectBlock;
+                             selectBlock:(TableViewDidSelectCellBlock)selectBlock;
 
 #pragma mark----------------------------TableDataSource--------------------------------
 - (instancetype)initWithSource:(NSArray *)source
@@ -62,7 +62,7 @@ typedef enum JDTabHelpType:NSUInteger {
 // 合并delegate和
 -(void)setCellAutoHeightAndeHeaderHeight:(CGFloat)hHeight
                             footerHeight:(CGFloat)fHeight
-                             selectBlock:(JDTabSelectCellBlock)selectBlock;
+                             selectBlock:(TableViewDidSelectCellBlock)selectBlock;
 
 -(void)setReuseArrayInSectionTypeWithArray:(NSArray*)array;
 
@@ -76,3 +76,20 @@ typedef enum JDTabHelpType:NSUInteger {
 
 @end
 
+
+
+//self.aTableView.estimatedRowHeight = 50;
+//[self.aTableView registerClass:[XLsn0wTableViewCell class] forCellReuseIdentifier:@"aTableViewCell"];
+//
+/////同一种cell
+//self.tabDelagate = [self.aTableView JDTab_DelegateWithHeaderHeight:10
+//                                                      footerHeight:10
+//                                                       selectBlock:^(NSIndexPath *indexPath) {
+//                                                           NSLog(@"选中");
+//                                                       }];
+//// 需要实现JDTableManagerDelegate 代理在cell里面
+//self.tabDataSource = [self.aTableView JDTab_DataSourceWithSource:@[@"111",@"222"] withTabType:NumberOfRowsInSectionCount withVC:self isSection:true reuseIdentifier:@"aTableViewCell"];
+//
+////第二种方式，可以不带原数据
+//self.tabDataSource = [self.aTableView JDTab_DataSourceWithTabType:NumberOfRowsInSectionCount withVC:self isSection:true reuseIdentifier:@"aTableViewCell"];
+//[self.tabDataSource updateReloadData:@[@"111",@"222"]];

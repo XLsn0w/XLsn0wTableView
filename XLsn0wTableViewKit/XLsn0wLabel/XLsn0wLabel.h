@@ -10,11 +10,16 @@
  *********************************************************************************************/
 #import <UIKit/UIKit.h>
 
-@interface UIScreen (Additions)
+@interface XLsn0wLabel : UIView
 
-+ (float)screenWidth;
-+ (float)screenHeight;
-+ (BOOL)isDeviceRetina;
-+ (float)scale;
+@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) UIColor *textColor;
+@property (nonatomic, strong) UIFont *font;
+@property (nonatomic) NSInteger lineSpace;
+@property (nonatomic) NSTextAlignment textAlignment;
+
+- (void)debugDraw;
+- (void)clear;
+- (BOOL)touchPoint:(CGPoint)point;
 
 @end

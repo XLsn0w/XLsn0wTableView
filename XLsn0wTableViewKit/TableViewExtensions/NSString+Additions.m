@@ -1,11 +1,13 @@
-//
-//  NSString+Additions.m
-//  Additions
-//
-//  Created by Johnil on 13-6-15.
-//  Copyright (c) 2013年 Johnil. All rights reserved.
-//
-
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *   \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *    \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 #import "NSString+Additions.h"
 #import <CoreText/CoreText.h>
 
@@ -108,7 +110,7 @@
     CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)font1.fontName,font1.pointSize,NULL);
     CTLineBreakMode lineBreakMode = kCTLineBreakByWordWrapping;
     //Apply paragraph settings
-    CTTextAlignment alignment = kCTLeftTextAlignment;
+    CTTextAlignment alignment = kCTTextAlignmentLeft;
     CTParagraphStyleRef style = CTParagraphStyleCreate((CTParagraphStyleSetting[6]){
         {kCTParagraphStyleSpecifierAlignment, sizeof(alignment), &alignment},
         {kCTParagraphStyleSpecifierMinimumLineHeight,sizeof(minimumLineHeight),&minimumLineHeight},

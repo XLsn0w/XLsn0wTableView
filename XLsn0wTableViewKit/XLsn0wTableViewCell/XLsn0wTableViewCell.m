@@ -1,4 +1,13 @@
-
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *   \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *    \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 #import "XLsn0wTableViewCell.h"
 #import "UIView+Additions.h"
 #import "UIScreen+Additions.h"
@@ -87,7 +96,7 @@
     topLine.y = self.height-.5;
 }
 
-- (void)setData:(NSDictionary *)data{
+- (void)setData:(NSDictionary *)data {
     _data = data;
     [avatarView setBackgroundImage:nil forState:UIControlStateNormal];
     if ([data valueForKey:@"avatarUrl"]) {

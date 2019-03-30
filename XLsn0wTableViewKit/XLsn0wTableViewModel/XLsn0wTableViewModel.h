@@ -8,13 +8,12 @@
  *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
  *                                                                                           *
  *********************************************************************************************/
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface UIScreen (Additions)
+NS_ASSUME_NONNULL_BEGIN
 
-+ (float)screenWidth;
-+ (float)screenHeight;
-+ (BOOL)isDeviceRetina;
-+ (float)scale;
+@interface XLsn0wTableViewModel : NSObject
 
 @end
+
+NS_ASSUME_NONNULL_END
