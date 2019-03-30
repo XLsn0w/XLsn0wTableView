@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/XLsn0w/XLsn0wTableView"
   s.source       = { :git => "https://github.com/XLsn0w/XLsn0wTableView.git", :tag => s.version.to_s }
 
-  s.summary      = "XLsn0w性能优化版TableView, 减轻ViewController负担, 异步渲染内容到图片, 按照滑动速度按需加载内容, 重写处理网络图片加载。XLsn0wTableView代理<UITableViewDelegate, UITableViewDataSource>协议 cell按需加载 异步绘制 图片缓存  cell高度自适应缓存"
+  s.summary      = "XLsn0w性能优化版TableView, 异步渲染, 按需加载, 高度自适应缓存"
 
   s.author       = { "XLsn0w" => "xlsn0wios@gmail.com" }
   s.license      = 'MIT'
@@ -25,3 +25,8 @@ Pod::Spec.new do |s|
   s.dependency "UITableView+FDTemplateLayoutCell"
 
 end
+
+# xlsn0w$ git tag 1.0.0
+# xlsn0w$ git push origin --tags
+# xlsn0w$ pod spec lint XLsn0wTableView.podspec --allow-warnings
+# xlsn0w$ pod trunk push XLsn0wTableView.podspec --allow-warnings
